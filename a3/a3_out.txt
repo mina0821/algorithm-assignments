@@ -1,0 +1,11 @@
+BFS: Boston, New York City, Pittsburgh, Columbus, Chicago, Minneapolis,
+DFS: Boston, New York City, Pittsburgh, Columbus, Chicago, St. Louis, Kansas City, Minneapolis,
+
+         City|          Meal Choice                  |Cost of Meal      
+--------------------------------------------------------------------
+       Boston|               \                       |      \       
+New York City|                       McChicken - Meal|    3.79      
+   Pittsburgh|             Double Cheeseburger - Meal|    4.38      
+     Columbus|                    Filet-O-Fish - Meal|    5.49      
+      Chicago|            Double Cheeseburgers - Meal|    5.49      
+  Minneapolis|     Quarter Pounder with Cheese - Meal|    5.49      

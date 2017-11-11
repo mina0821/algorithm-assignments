@@ -1,0 +1,36 @@
+COMP SCI 2XB3
+Mingnan Su
+400016478
+The fact that the work being submitted by me is my own individual work.
+
+Modified with Gen.java:
+	create an extra for loop to generate test arrays.
+
+Modified with Insertion.java:
+	create an extra method to search in a ordered list, given the
+	value v. The index indicates that v should either sits at the
+	left of given index, or right.
+	
+Modified with all sort classes:
+	create an extra method "exch" and "less" to better formalize
+	the code.
+	
+Concerns with SortTest.java:
+	SetUpBeforeClass(): reads the data from a2_in.txt, and store
+	the data in a vector of vectors called data.
+	
+	SetUp(): Convert vectors of jobs into array of jobs.
+	
+	boolean isSorted(arr): return true if given array is sorted
+	
+	For code simplicity, I only create one local variable Job[] test
+	to store an array of jobs we want to test (required in analysis).
+	What I will do on my own is to change the value of the last for
+	loop I added (in Gen.java), in order to get my test arrays. After
+	I finished testing 2^14 array size, I will go to Gen.java and change
+	the value into 2^16, thus I can use the same code in SortTest.java,
+	but this time I am testing 2^16 array size.
+	
+	For better visualization of the elapsed time result, I use two 
+	print statement in test methods. First line is the name of the
+	sorting algorithm, second line is the array of elapsed time.

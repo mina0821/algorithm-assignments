@@ -1,0 +1,35 @@
+3.1
+The type of the graph that can be used in this problem is
+a directed graph with weighted edge. Nodes of the graph
+represents the city, the edge represents the cost of food 
+at the destinations city of an edge. We can create a stack
+of items in the menu, sorted by the cost of the meal, with
+the item with lowest cost on the top of the stack. When we 
+are generating the shortest path, we pop an item on the top
+of the stack, check if the restaurant sits within the destination
+city, and then consider the cost of food as the weight of the
+edge.
+
+3.2
+bfs found the result in fewer steps, because bfs visit all nodes
+that are point to current node recursively. Since in our case, 
+path provided by bfs only take 5 stops, bfs will be quicker to 
+find. This will not remain true if the number of stops increases
+since bfs visits all the nodes recursively. In other words, the 
+more stops that bfs take, the more nodes we need to visit by bfs.
+
+3.4
+Suppose we have X cities, Y restaurants. Every times we create an 
+edge, we need to check which restaurants have with the cities.
+So for the weight calculation, the complexity is (X-1)*Y. Then, for
+the shortest path algorithm, we will need to visit all the nodes
+in the worst case, so the complexity is (X-1).
+
+The complexity will not remain the same if the number of cities and
+restaurants changes. The equation we come up with above just uses
+the X and Y as variables, which is number of cities and restaurants.
+More cities and restaurants we have, more steps we need to take in 
+order to check how many restaurants is within the city. The number
+of stops will not affect the complexity of the problem, since the
+weight of edge in this case is dynamicly changing, we will always 
+need to go through all paths, and find out the one with the lowest cost.

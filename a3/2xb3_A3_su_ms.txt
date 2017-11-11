@@ -1,0 +1,43 @@
+CS 2XB3
+Mingnan Su
+400016478
+The fact that the work being submitted by me is my individual work.
+
+Library using in this assignment:
+From algorithm 4th edition text book - algs4.jar is imported in this assignment.
+Data structure such as digraph, stack and etc. is imported implicitly in this assignment.
+
+Files which is from algs4.jar but imported explictly:
+BreathFirstDirectedPath.java    -use for 3.2
+DepthFirstDirectedPaths.java    -use for 3.2
+DijkstraSP.java                 -use for 3.4
+
+3.2    bfs vs dfs
+DigraphGenerator.java  --Read data, clean data, store all nodes
+                       --generate a digraph
+
+FindPath.java  --use DigraphGenerator.java, bfs, dfs
+               --find the path by bfs and dfs
+
+
+3.3    Junit
+TestPath.java  --use DigraphGenerator.java, FindPath.java
+               --test if the result path is valid
+
+
+3.4    Shortest path
+WeightCalculator.java  --calculate the weight of edge by destination city
+
+DigraphWeiGener.java  --use WeightCalculator.java
+                      --generate a digraph with weighted edge
+                      --sort the menu items by price, and put into a stack
+
+FindShortestPath.java  --use DigraphGenerator.java, DigrahWeiGener.java, dijSP
+                       --find the path by dijSP
+
+Menu.java  --ADT implements Comparable interface to store data from menu entry
+
+
+4    Output specifications
+Client.java  --run all the modules here
+             --write the output to a3_out.txt
